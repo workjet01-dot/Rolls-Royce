@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls-Royce | Masterpieces in Motion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="brand-logo">Rolls-Royce</a>
+            <div class="nav-links">
+                <a href="#models">Models</a>
+                <a href="#bespoke">Bespoke</a>
+                <a href="#ownership">Ownership</a>
+                <a href="#boutique">Boutique</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero / Showroom Section with Scroll Animation -->
+    <main>
+        <div class="canvas-container" id="canvas-container">
+            <!-- Sticky inner container for canvas -->
+            <div class="canvas-sticky-wrapper">
+                <canvas id="hero-canvas"></canvas>
+                <div id="loading-overlay" class="loading-overlay">Loading Experience 0%</div>
+                
+                <!-- Content overlay -->
+                <div class="content-overlay">
+                    <div class="content-wrapper">
+                        <div class="showroom-text">
+                            <h2 class="tagline uppercase-tracking">The Pinnacle of Luxury</h2>
+                            <h1 class="car-title">Phantom</h1>
+                            <p class="car-description">An iconic silhouette with peerless presence. Phantom is the ultimate expression of bespoke craftsmanship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ghost Experience Section -->
+        <section class="ghost-experience" id="ghost">
+            <div class="ghost-bg-container" id="ghost-canvas-container">
+                <canvas id="ghost-door-canvas"></canvas>
+                <div class="ghost-vignette"></div>
+            </div>
+            <div class="glass-slide-wrapper">
+                <div class="glass-slide reveal-slide">
+                    <h2 class="section-subtitle uppercase-tracking">The Ghost</h2>
+                    <h3 class="ghost-title">Rolls Royce</h3>
+                    <p class="ghost-tagline">Silent like a ghost</p>
+                    <div class="glass-separator"></div>
+                    <p class="ghost-brief">Experience the purest expression of Rolls-Royce. Strikingly simple and flawlessly elegant.</p>
+                    <a href="https://wa.me/919546660709?text=Hello,%20I%20am%20interested%20in%20booking%20a%20Rolls-Royce%20Ghost." target="_blank" class="glass-button">
+                        <span class="btn-text">Book Now</span>
+                        <span class="btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Models Section -->
+        <section id="models" class="models-section">
+            <div class="models-container text-center">
+                <h2 class="section-subtitle uppercase-tracking fade-up">The Collection</h2>
+                <h3 class="section-title fade-up">Masterpieces in Motion</h3>
+                
+                <div class="grid">
+                    <!-- Car 1 -->
+                    <div class="car-card fade-up delay-1">
+                        <img src="assets/images/phantom.png" alt="Phantom" class="car-image-placeholder">
+                        <h4 class="car-card-title">Phantom</h4>
+                        <p class="car-card-tagline">The Pinnacle of Luxury</p>
+                        <p class="car-card-desc">An iconic silhouette with peerless presence. Phantom is the ultimate expression of bespoke craftsmanship.</p>
+                        <span class="explore-btn uppercase-tracking">Explore &rsaquo;</span>
+                    </div>
+
+                    <!-- Car 2 -->
+                    <div class="car-card fade-up delay-2">
+                        <img src="assets/images/ghost.png" alt="Ghost" class="car-image-placeholder">
+                        <h4 class="car-card-title">Ghost</h4>
+                        <p class="car-card-tagline">Pure Expression</p>
+                        <p class="car-card-desc">Strikingly simple and flawlessly elegant. Ghost represents a minimalist purity combined with effortless power.</p>
+                        <span class="explore-btn uppercase-tracking">Explore &rsaquo;</span>
+                    </div>
+
+                    <!-- Car 3 -->
+                    <div class="car-card fade-up delay-3">
+                        <img src="assets/images/spectre.png" alt="Spectre" class="car-image-placeholder">
+                        <h4 class="car-card-title">Spectre</h4>
+                        <p class="car-card-tagline">The Electric Super Coupé</p>
+                        <p class="car-card-desc">A bold vision of the future. Spectre delivers classic luxury and silent waftability in a fully electric grand tourer.</p>
+                        <span class="explore-btn uppercase-tracking">Explore &rsaquo;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">Rolls-Royce Motor Cars</div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Vehicles</h4>
+                    <a href="#">Phantom</a>
+                    <a href="#">Ghost</a>
+                    <a href="#">Cullinan</a>
+                    <a href="#">Spectre</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Discover</h4>
+                    <a href="#">Bespoke</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Sustainability</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#">Find a Dealer</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Rolls-Royce Motor Cars Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
